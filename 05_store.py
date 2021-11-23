@@ -48,8 +48,10 @@ store = {
 
 # TODO здесь ваш код
 
-
-
-
-
-
+for name in goods:
+        col = 0
+        count = 0
+        for tovar in store[goods[name]]:
+            col += tovar['quantity']
+            count += tovar['quantity'] * tovar['price']
+        print(f"{name}, {col}, шт, {count}, руб")
