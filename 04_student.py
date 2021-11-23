@@ -10,5 +10,13 @@
 #   Студенту надо попросить ХХХ.ХХ рублей
 
 educational_grant, expenses = 10000, 12000
-
-# TODO здесь ваш код
+sum_exp = 0
+sum_gra = educational_grant * 10
+time = 0
+sum_exp += expenses
+while time < 10:
+          expenses *= 1.03
+          sum_exp += expenses
+          time += 1
+          res = sum_exp - sum_gra
+print(res )
