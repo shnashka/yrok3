@@ -31,4 +31,5 @@ for i in range(10):
             close = sd.get_point(x, y + dlok_h)
             sd.line(Nachalo, close, sd.COLOR_BLACK, 1)
 
+
 sd.pause()
