@@ -11,6 +11,15 @@ y = 100
 x = 100
 dlok_h = 50
 blok_l = 100
+Nachalo1 = sd.get_point(x, 150)
+close1 = sd.get_point(x, 650)
+Nachalo2 = sd.get_point(600, 150)
+close2 = sd.get_point(600, 650)
+Nachalo3 = sd.get_point(100, 650)
+close3 = sd.get_point(600, 650)
+sd.line(Nachalo2, close2, sd.COLOR_DARK_GREEN, 1)
+sd.line(Nachalo1, close1, sd.COLOR_DARK_GREEN, 1)
+sd.line(Nachalo3, close3, sd.COLOR_DARK_GREEN, 1)
 for i in range(10):
     y += dlok_h
     Nachalo = sd.get_point(100, y)
