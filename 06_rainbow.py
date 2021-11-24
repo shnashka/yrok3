@@ -27,8 +27,8 @@ coord = [500, -100]
 
 for i in range(7):
     point = sd.get_point(coord[0], coord[1])
-    coord[1] += 8
-    R = 400
-    sd.circle(point, R, rainbow_colors[i], 10)
+    coord[1] += 7
+    R = 200
+    sd.circle(point, R + i*20, rainbow_colors[i], 20)
 
 sd.pause()
